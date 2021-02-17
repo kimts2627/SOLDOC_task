@@ -11,12 +11,17 @@
   border: none;
   padding: 12px;
   margin-top: 12px;
+  resize: none;
 }
 
 .additional::placeholder {
   font-size: 14px;
   font-weight: 500;
   color: #B0B0B0;
+}
+
+.additional:focus {
+  outline: none;
 }
 
 .Button {

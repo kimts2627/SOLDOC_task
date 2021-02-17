@@ -5,7 +5,7 @@ const Dates = () => {
   const getTodayDates = () => {
     let today = new Date();
     let year = today.getFullYear();
-    let month = today.getMonth();
+    let month = today.getMonth() + 1;
     let date = today.getDate();
 
     if(month < 10) {

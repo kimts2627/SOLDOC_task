@@ -2,7 +2,7 @@ import React from 'react';
 
 const Progressbar = ({ progress }) => {
   return (
-    <div className="Progress" className={progress}/>
+    <div className="Progress" className='progress'/>
   );
 }
 

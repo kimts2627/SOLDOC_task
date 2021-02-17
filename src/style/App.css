@@ -7,8 +7,33 @@
 }
 
 .App {
+  position: absolute;
   width: 375px;
   height: 667px;
   box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.123);
   font-family: 'Spoqa Han Sans Neo';
+}
+
+.progress {
+  position: absolute;
+  top: 0;
+  width: 33%;
+  height: 3px;
+  background: #50A0E0;
+}
+
+.progress-two {
+  position: absolute;
+  top: 0;
+  width: 33%;
+  height: 3px;
+  background: #50A0E0;
+}
+
+.progress-three {
+  position: absolute;
+  top: 0;
+  width: 33%;
+  height: 3px;
+  background: #50A0E0;
 }
