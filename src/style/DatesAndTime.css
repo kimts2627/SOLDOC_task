@@ -1,0 +1,54 @@
+.DatesMolecules {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.TimeMolecules {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+
+.section {
+  font-size: 14px;
+}
+
+.today {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.Times {
+  margin-top: 3px;
+  margin-left: -8px;
+}
+
+.SingleTime {
+  width: 73px;
+  height: 40px;
+  border: 1px solid #EDEEF0;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 8px;
+  margin-top: 9px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.SingleTime:focus {
+  outline: none;
+}
+
+.SingleTime-active {
+  width: 73px;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 8px;
+  margin-top: 9px;
+  background-color: #50A0E0;
+  cursor: pointer;
+}
