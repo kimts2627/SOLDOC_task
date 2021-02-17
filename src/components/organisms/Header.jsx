@@ -1,11 +1,12 @@
 import React from 'react';
 import Titles from '../molecules/TitlesMolecules';
-// import logo from '../atoms/SubTitle';
+import SoldocLogo from '../atoms/SoldocLogo';
+
 
 const Header = () => {
   return (
     <header className="Header">
-      <img src='' alt='' />
+      <SoldocLogo />
       <Titles />
     </header>
   );
