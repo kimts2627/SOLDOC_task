@@ -1,0 +1,18 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  width: 375px;
+  height: 667px;
+  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.123);
+}
+
+.Header {
+  display: inline;
+
+}
