@@ -48,4 +48,8 @@ table {
 
 /*-----------------------code for reset CSS---------------------------*/
 
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
 @import './App.css';
+@import './Header.css';
+@import './Footer.css';
+@import './DatesAndTime.css';
