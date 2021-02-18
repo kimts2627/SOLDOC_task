@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 
-const Dates = () => {
+const Dates = ({ selectedData, changeSelectedData }) => {
+
+  let todayRef = useRef();
+  useEffect(() => {
+    let changedData = Object.assign({}, selectedData, { date: todayRef.current.textContent });
+    if(selectedData.date === null) {
+      changeSelectedData(changedData);
+    }
+  }, [selectedData]);
 
   const getTodayDates = () => {
     let today = new Date();
@@ -19,7 +27,7 @@ const Dates = () => {
   }
 
   return (
-    <p className="today">
+    <p className="today" ref={todayRef}>
       {getTodayDates()}
     </p>
   );
