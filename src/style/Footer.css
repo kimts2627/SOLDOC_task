@@ -37,3 +37,7 @@
   font-weight: 500;
   cursor: pointer;
 }
+
+.Button:focus {
+  outline: none;
+}

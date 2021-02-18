@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import SingleTime from '../atoms/SingleTime';
 
 const Times = () => {
 
   const [times, setTimes] = useState(
-    ['16:30', '17:00', '17:30', '18:00', '18:30', '19:00', '19:30', '>']
+    ['09:00', '09:30', '10:00', '10:30', '11:00', '11:30', '12:00', '>']
   ); 
 
   return (
