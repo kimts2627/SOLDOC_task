@@ -2,6 +2,8 @@ import React from 'react';
 
 const Progressbar = ({ selectedData }) => {
 
+
+  // 항목 작성 진척도에 따라 progress bar 스타일 변화
   const checkProgress = () => {
     let progressNum = 0;
     for(let i in selectedData) {

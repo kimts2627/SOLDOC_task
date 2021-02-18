@@ -2,6 +2,7 @@ import React from 'react';
 
 const InputBox = ({ inputType, selectedData, changeSelectedData }) => {
 
+  // additional input box 안에 타이핑 시 state에 자동으로 업데이트하는 함수
   const handleInputChange = (e) => {
     let changedData = Object.assign({}, selectedData, { additional: e.target.value });
     changeSelectedData(changedData);

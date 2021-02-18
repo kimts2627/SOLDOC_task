@@ -7,7 +7,7 @@ const Footer = ({ selectedData, changeSelectedData }) => {
   return (
     <footer className="Footer">
       <AdditionalMolecules selectedData={selectedData} changeSelectedData={changeSelectedData} />
-      <Button />
+      <Button selectedData={selectedData} />
     </footer>
   );
 }

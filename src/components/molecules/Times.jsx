@@ -9,7 +9,17 @@ const Times = ({ selectedData, changeSelectedData }) => {
 
   return (
     <div className="Times">
-      {times.map(time => <SingleTime time={time} setTimes={setTimes} />)}
+      {times.map(
+        time =>
+        <SingleTime
+          key={time}
+          time={time}
+          times={times}
+          setTimes={setTimes}
+          selectedData={selectedData}
+          changeSelectedData={changeSelectedData}
+        />
+      )}
     </div>
   );
 }

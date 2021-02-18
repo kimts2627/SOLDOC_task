@@ -44,6 +44,7 @@
 .SingleTime-active {
   width: 73px;
   height: 40px;
+  border: none;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 500;
@@ -51,4 +52,8 @@
   margin-top: 9px;
   background-color: #50A0E0;
   cursor: pointer;
+}
+
+.SingleTime-active:focus {
+  outline: none;
 }

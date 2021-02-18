@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 
 const Dates = ({ selectedData, changeSelectedData }) => {
 
+  // 렌더와 동시에 state에 오늘의 날짜를 업데이트 한다.
   let todayRef = useRef();
   useEffect(() => {
     let changedData = Object.assign({}, selectedData, { date: todayRef.current.textContent });
@@ -10,6 +11,7 @@ const Dates = ({ selectedData, changeSelectedData }) => {
     }
   }, [selectedData]);
 
+  // 오늘의 날짜를 구하는 함수
   const getTodayDates = () => {
     let today = new Date();
     let year = today.getFullYear();
