@@ -1,6 +1,12 @@
 import React from 'react';
 
-const InputBox = ({ inputType }) => {
+const InputBox = ({ inputType, selectedData, changeSelectedData }) => {
+
+  const handleInputChange = (e) => {
+    let changedData = Object.assign({}, selectedData, { additional: e.target.value });
+    changeSelectedData(changedData);
+  }
+
   return (
     <textarea
       wrap='virtual'
@@ -10,6 +16,7 @@ const InputBox = ({ inputType }) => {
       className={
         inputType === 'additional' ? 'input additional' : 'input etc'
       }
+      onChange={(e) => handleInputChange(e)}
     >
     </textarea>
   );

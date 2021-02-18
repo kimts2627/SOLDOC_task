@@ -18,8 +18,8 @@ const App = () => {
     <div className="App">
       <Progressbar selectedData={selectedData} />
       <Header />
-      <DatesAndTime />
-      <Footer />
+      <DatesAndTime selectedData={selectedData} changeSelectedData={changeSelectedData}/>
+      <Footer selectedData={selectedData} changeSelectedData={changeSelectedData} />
     </div>
   );
 }

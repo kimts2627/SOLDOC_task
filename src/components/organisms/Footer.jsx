@@ -3,10 +3,10 @@ import AdditionalMolecules from '../molecules/AdditionalMolecules';
 import Button from '../atoms/Button';
 
 
-const Footer = () => {
+const Footer = ({ selectedData, changeSelectedData }) => {
   return (
     <footer className="Footer">
-      <AdditionalMolecules />
+      <AdditionalMolecules selectedData={selectedData} changeSelectedData={changeSelectedData} />
       <Button />
     </footer>
   );
